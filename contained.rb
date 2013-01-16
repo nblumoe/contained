@@ -1,4 +1,5 @@
-GIT_DIR = '/home/nils/git_repos/UFOStart'    # Directory of the project's git repository
+require './config'
+
 Dir.chdir(GIT_DIR)
 `git log e06e4dc641b9c76e6c32c3c5b79e6918ac5f3a78..change-friends-to-users`.each_line do |line|
 
